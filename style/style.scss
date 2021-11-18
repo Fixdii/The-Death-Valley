@@ -96,7 +96,7 @@ p {
     background: #F8FAFA;
     height: 985px;
 
-    &__title {
+    &__titles {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -104,7 +104,7 @@ p {
 
         margin-bottom: 109px;
 
-        &_h1 {
+        &_title {
             margin-top: 134px;
             padding-left: 23px;
             font-family: 'Montserrat';
@@ -117,7 +117,7 @@ p {
             color: #000000;
         }
 
-        &_h3 {
+        &_subtitle {
             font-family: 'Merriweather';
             font-size: 18px;
             line-height: 28px;
@@ -181,7 +181,7 @@ p {
 .works {
     height: 1116px;
 
-    &__title {
+    &__titles {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -189,7 +189,7 @@ p {
         text-transform: uppercase;
         color: #000000;
 
-        &_h1 {
+        &_title {
             margin-top: 134px;
             margin-bottom: 6.5px;
             font-family: 'Montserrat', sans-serif;
@@ -199,7 +199,7 @@ p {
             line-height: 28px;
         }
 
-        &_h3 {
+        &_subtitle {
             margin-bottom: 118px;
             font-family: 'Merriweather', serif;
             letter-spacing: 1.02px;
@@ -231,7 +231,7 @@ p {
         color: #000000a1;
     }
 
-    &__title {
+    &__titles {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -239,7 +239,7 @@ p {
         text-transform: uppercase;
         color: #000000;
 
-        &_h1 {
+        &_title {
             margin-top: 154px;
             margin-bottom: 6.5px;
             font-family: 'Montserrat', sans-serif;
@@ -249,7 +249,7 @@ p {
             line-height: 28px;
         }
 
-        &_h3 {
+        &_subtitle {
             margin-bottom: 113px;
             font-family: 'Merriweather', serif;
             letter-spacing: 1.02px;
@@ -656,7 +656,7 @@ p {
         height: 322px;
     }
 
-    .about-us__title {
+    .about-us__titles {
         margin-bottom: 15px;
     }
 
@@ -664,7 +664,7 @@ p {
         width: 504px;
     }
 
-    .about-us__title_h1 {
+    .about-us__titles_title {
         margin-top: 80px;
     }
 }
@@ -674,7 +674,7 @@ p {
         width: 250px;
     }
 
-    .team-part__title_h1 {
+    .team-part__titles_title {
         margin-top: 80px;
     }
 
@@ -721,11 +721,11 @@ p {
         font-size:30px;
     }
 
-    .works__title_h3{
+    .works__titles_subtitle{
         margin-bottom: 50px;
     }
 
-    .us__title_h3 {
+    .us__titles_subtitle {
         font-size: 16px;
     }
 
@@ -758,11 +758,11 @@ p {
         height: 290px;
     }
 
-    .about-us__title_h1{
+    .about-us__titles_title{
         font-size: 30px;
     }
 
-    .works__title_h1{
+    .works__titles_title{
         font-size: 30px;
     }
 
@@ -781,10 +781,6 @@ p {
     .about-us__content_image{
         width: 300px;
     }
-}
-
-@media screen and (max-width: 570px) {
-   
 }
 
 @media screen and (max-width: 340px) {

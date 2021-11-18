@@ -111,7 +111,7 @@ p {
   height: 985px;
 }
 
-.about-us__title {
+.about-us__titles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +126,7 @@ p {
   margin-bottom: 109px;
 }
 
-.about-us__title_h1 {
+.about-us__titles_title {
   margin-top: 134px;
   padding-left: 23px;
   font-family: 'Montserrat';
@@ -139,7 +139,7 @@ p {
   color: #000000;
 }
 
-.about-us__title_h3 {
+.about-us__titles_subtitle {
   font-family: 'Merriweather';
   font-size: 18px;
   line-height: 28px;
@@ -206,7 +206,7 @@ p {
   height: 1116px;
 }
 
-.works__title {
+.works__titles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,7 +222,7 @@ p {
   color: #000000;
 }
 
-.works__title_h1 {
+.works__titles_title {
   margin-top: 134px;
   margin-bottom: 6.5px;
   font-family: 'Montserrat', sans-serif;
@@ -232,7 +232,7 @@ p {
   line-height: 28px;
 }
 
-.works__title_h3 {
+.works__titles_subtitle {
   margin-bottom: 118px;
   font-family: 'Merriweather', serif;
   letter-spacing: 1.02px;
@@ -272,7 +272,7 @@ p {
   color: #000000a1;
 }
 
-.team-part__title {
+.team-part__titles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,7 +288,7 @@ p {
   color: #000000;
 }
 
-.team-part__title_h1 {
+.team-part__titles_title {
   margin-top: 154px;
   margin-bottom: 6.5px;
   font-family: 'Montserrat', sans-serif;
@@ -298,7 +298,7 @@ p {
   line-height: 28px;
 }
 
-.team-part__title_h3 {
+.team-part__titles_subtitle {
   margin-bottom: 113px;
   font-family: 'Merriweather', serif;
   letter-spacing: 1.02px;
@@ -747,13 +747,13 @@ p {
   .about-us__content_image {
     height: 322px;
   }
-  .about-us__title {
+  .about-us__titles {
     margin-bottom: 15px;
   }
   .about-us__content_card {
     width: 504px;
   }
-  .about-us__title_h1 {
+  .about-us__titles_title {
     margin-top: 80px;
   }
 }
@@ -762,7 +762,7 @@ p {
   .man-img {
     width: 250px;
   }
-  .team-part__title_h1 {
+  .team-part__titles_title {
     margin-top: 80px;
   }
   .works {
@@ -805,10 +805,10 @@ p {
   .header__title {
     font-size: 30px;
   }
-  .works__title_h3 {
+  .works__titles_subtitle {
     margin-bottom: 50px;
   }
-  .us__title_h3 {
+  .us__titles_subtitle {
     font-size: 16px;
   }
   .man-img {
@@ -833,10 +833,10 @@ p {
     padding-left: 0px;
     height: 290px;
   }
-  .about-us__title_h1 {
+  .about-us__titles_title {
     font-size: 30px;
   }
-  .works__title_h1 {
+  .works__titles_title {
     font-size: 30px;
   }
   .about-us__content_title1 {
