@@ -14,21 +14,21 @@
 </head>
 <body>
     <header class = "header">
-        <div class="header__logo">
-            <a href="#" class="header__link link header__logo_link">sh<span class = "header__logo_span">o</span>pno</a>
-        </div>  
-        <div class="header__title">
-            <h1 class="header__title_h1">Say Hello to <span class="header__title_span">Shopno!</spanSHOPNO!</span></h1>
-            <h1 class="header__title_h1"><span class="header__title_span">Agency</span> CORPORATE SHOPNO Theme</h1>
-        </div>  
-        <div class="header__button">
-            <button class="header__button_contact">
-                CONTACT US
-            </button>
-          
-        </div>    
-        <img src="image/part1-logo.png" alt="">
-      
+        <div class = "wrapper">
+            <div class="header__logo">
+                <a href="#" class="header__link"><img src="image/Logo.png" alt=""></a>
+            </div>  
+            <div class="header__headlines">
+                <h1 class="header__title">Say Hello to <span class="header__span">Shopno!</span></h1>
+                <h1 class="header__title"><span class="header__span">Agency</span> CORPORATE SHOPNO Theme</h1>
+            </div>  
+            <div class="header__button">
+                <button class="header__button_contact">
+                    CONTACT US
+                </button>    
+                <img class="header__img" src="image/part1-logo.png" alt="">            
+            </div>    
+        </div>       
     </header>
     <main>
         <section class = "about-us">
@@ -61,16 +61,21 @@
             </div>     
             <div class = "works__cards">
                 <div class = "works__cards_images">
-                    <img src="image/Rectangle 2.png" alt="">
-                    <img src="image/Rectangle 2 copy.png" alt="">
-                    <img src="image/Rectangle 2 copy 2.png" alt="">
+                    <img class="first-work work-img" src="image/Rectangle 2.png" alt="">                    
+                    <img class="work-img" src="image/Rectangle 2 copy.png" alt="">
+                    <img class="last-work work-img" src="image/Rectangle 2 copy 2.png" alt="">
                 </div>
                 <div class = "works__cards_images">
-                    <img src="image/Rectangle 2 copy 3.png" alt="">               
-                    <img src="image/Rectangle.png" alt="">
-                    <img src="image/home_dietitian_sectionbg_1.png" alt="">
-                </div>                
-            </div>     
+                    <img class="first-work work-img" src="image/Rectangle 2 copy 3.png" alt="">               
+                    <img class="work-img" src="image/Rectangle.png" alt="">
+                    <img class="last-work work-img" src="image/home_dietitian_sectionbg_1.png" alt="">
+                </div>                              
+            </div>    
+            <div id="myModal" class="modal">
+                <span class="close">×</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>   
         </section>
         <section class = "team-part">
             <div class = "team-part__title">
@@ -79,13 +84,10 @@
             </div>     
             <div class = "team-part__cards">                
                 <div class = "team-part__cards_images">     
-                    <div><img src="image/Rectangle 40 copy 7.png" alt=""></div>
-                    <div class = "man-card">
-                        <img src="image/team_4.png" alt="">                       
-                        <div class = "team-part__rectangle">
-                            <img class = "team-part__triangle" src="image/Shape 1.png" alt="">
-                            <div class = "rectangle__content">
-                                <h1 class = "team-part__rectangle_h1">AL RAYHAN <span class = "team-part__span">/ UI Designer</span></h1>
+                    <div class = "man-card first-man">
+                        <img class="man-img" src="image/Rectangle 40 copy 7.png" alt="">
+                        <div class="card-info">
+                            <h1 class = "team-part__rectangle_title">AL RAYHAN <span class = "team-part__span">/ UI Designer</span></h1>
                                 <p class = "team-part__rectangle_text">
                                     Lorem Ipsum is not simply is  an action
                                     designer random text It has roots in a
@@ -97,15 +99,95 @@
                                     <a class = "team-part__social_link" href="#"><img src="image/ball.png" alt=""></a>
                                     <a class = "team-part__social_link" href="#"><img src="image/message.png" alt=""></a>
                                 </div>
-                            </div>                           
                         </div>
                     </div>
-                    <div> <img src="image/Rectangle 40 copy 6.png" alt=""></div>                                                   
+                    <div class = "man-card">
+                        <img class="man-img" src="image/team_4.png" alt="">                       
+                        <div class="card-info">
+                            <h1 class = "team-part__rectangle_title">AL RAYHAN <span class = "team-part__span">/ UI Designer</span></h1>
+                                <p class = "team-part__rectangle_text">
+                                    Lorem Ipsum is not simply is  an action
+                                    designer random text It has roots in a
+                                    piece. 
+                                </p>
+                                <div class = "team-part__social">
+                                    <a class = "team-part__social_link" href="#"><img src="image/facebook.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/twitter.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/ball.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/message.png" alt=""></a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class = "man-card last-man">
+                        <img class="man-img" src="image/Rectangle 40 copy 6.png" alt="">
+                        <div class="card-info">
+                            <h1 class = "team-part__rectangle_title">AL RAYHAN <span class = "team-part__span">/ UI Designer</span></h1>
+                                <p class = "team-part__rectangle_text">
+                                    Lorem Ipsum is not simply is  an action
+                                    designer random text It has roots in a
+                                    piece. 
+                                </p>
+                                <div class = "team-part__social">
+                                    <a class = "team-part__social_link" href="#"><img src="image/facebook.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/twitter.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/ball.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/message.png" alt=""></a>
+                                </div>
+                        </div>
+                    </div>                                                   
                 </div>
                 <div class = "team-part__cards_images">
-                    <img src="image/Rectangle 40.png" alt="">               
-                    <img src="image/Rectangle 40 copy.png" alt="">
-                    <img src="image/Rectangle 40 copy 7.png" alt="">
+                    <div class = "man-card first-man">
+                        <img class="man-img" src="image/Rectangle 40.png" alt="">
+                        <div class="card-info">
+                            <h1 class = "team-part__rectangle_title">AL RAYHAN <span class = "team-part__span">/ UI Designer</span></h1>
+                                <p class = "team-part__rectangle_text">
+                                    Lorem Ipsum is not simply is  an action
+                                    designer random text It has roots in a
+                                    piece. 
+                                </p>
+                                <div class = "team-part__social">
+                                    <a class = "team-part__social_link" href="#"><img src="image/facebook.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/twitter.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/ball.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/message.png" alt=""></a>
+                                </div>
+                        </div>
+                    </div>  
+                    <div class = "man-card">
+                        <img class="man-img" src="image/Rectangle 40 copy.png" alt="">
+                        <div class="card-info">
+                            <h1 class = "team-part__rectangle_title">AL RAYHAN <span class = "team-part__span">/ UI Designer</span></h1>
+                                <p class = "team-part__rectangle_text">
+                                    Lorem Ipsum is not simply is  an action
+                                    designer random text It has roots in a
+                                    piece. 
+                                </p>
+                                <div class = "team-part__social">
+                                    <a class = "team-part__social_link" href="#"><img src="image/facebook.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/twitter.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/ball.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/message.png" alt=""></a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class = "man-card last-man">
+                        <img class="man-img" src="image/Rectangle 40 copy 7.png" alt="">
+                        <div class="card-info">
+                            <h1 class = "team-part__rectangle_title">AL RAYHAN <span class = "team-part__span">/ UI Designer</span></h1>
+                                <p class = "team-part__rectangle_text">
+                                    Lorem Ipsum is not simply is  an action
+                                    designer random text It has roots in a
+                                    piece. 
+                                </p>
+                                <div class = "team-part__social">
+                                    <a class = "team-part__social_link" href="#"><img src="image/facebook.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/twitter.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/ball.png" alt=""></a>
+                                    <a class = "team-part__social_link" href="#"><img src="image/message.png" alt=""></a>
+                                </div>
+                        </div>
+                    </div>                   
                 </div>                
             </div>     
         </section>
@@ -122,17 +204,23 @@
                 </form>     
             </div>            
             <div class = "footer__contact_right">
-                <p class = "footer__contact_pharagraph">
-                    Adress line 1 <br>Adress line 2 <br>Phone: +548 945645<br>Fax: +456456
-                    54546<br><br>Web: www.designagency.net<br>E-mail: info@designagency.net
-                </p>
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abad63c24a49a4504c4836e03d5dafbb0e5fc8533d3f1955707a6dbaea65c2a65&amp;width=455&amp;height=224&amp;lang=ru_RU&amp;scroll=true&amp;margin-left: 23px;"></script>
+                <div class = "footer__contact_pharagraph">
+                    <p>Adress line 1</p>
+                    <p>Adress line 2</p>
+                    <p>Phone: +548 945645</p>
+                    <p>Fax: +45645654546</p>
+                    <p style="margin-top:21px;">Web: www.designagency.net</p>
+                    <p>E-mail: info@designagency.net</p>
+                </div>
+                <div class="y-map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abad63c24a49a4504c4836e03d5dafbb0e5fc8533d3f1955707a6dbaea65c2a65&amp;width=100%&amp;height=224&amp;lang=ru_RU&amp;scroll=true&amp;margin-left: 23px;"></script>
+                </div>
             </div>
         </div>
         <div class = "footer__social">       
-            <h3>FOLLOW US</h3>     
+            <h3 class="footer__title">FOLLOW US</h3>     
             <div class = "footer__social_links">
-                <a class = "footer__social_link footer__social_pinterest" href="#"><img class = "footer__social_img" src="image/pint.png" alt=""></a>
+                <a class = "footer__social_link" href="#"><img class = "footer__social_img" src="image/pint.png" alt=""></a>
                 <a class = "footer__social_link" href="#"><img class = "footer__social_img" src="image/tw.png" alt=""></a>
                 <a class = "footer__social_link" href="#"><img class = "footer__social_img" src="image/fb.png" alt=""></a>
                 <a class = "footer__social_link" href="#"><img class = "footer__social_img" src="image/bl.png" alt=""></a>
