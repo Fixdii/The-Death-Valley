@@ -21,6 +21,11 @@ p {
     padding: 0px 30px;
 }
 
+.logo{
+    max-width: 113px;
+    height: 46px;
+}
+
 .header {
     height: 800px;
     background: #EFF0F2;
@@ -62,6 +67,8 @@ p {
         position: absolute;
         left: 519px;
         top: 30px;
+        width: 75px;
+        height: 85px;
     }  
 }
 
@@ -89,8 +96,9 @@ p {
         cursor: pointer;
 
         &:hover {
-        opacity: 1;
-    }
+            opacity: 1;
+            transition: 1s;
+        }
 
     }
 }
@@ -224,6 +232,13 @@ p {
 
 .work-img{
     cursor: pointer;
+    max-width: 370px;
+    max-height: 359px;
+}
+
+.man-img{
+    max-width: 370px;
+    max-height: 440px;
 }
 
 .team-part {
@@ -333,6 +348,7 @@ p {
 
         &:hover {
             opacity: 0.4;
+            transition: 1s;
         }
     }    
 
@@ -395,6 +411,7 @@ p {
             color: #000000;
             background: #6eeee4;
             opacity: 1;
+            transition: 0.3s;
         }
     }  
 
@@ -506,6 +523,7 @@ p {
 
         &:hover{
             background: #18cebf;
+            transition: 1s;
         }
     }
 }
@@ -742,6 +760,7 @@ p {
             margin-left: 27px;
             margin-top: 2px;
             margin-bottom: 15px;
+            line-height: 20px;
         }     
     }
 
@@ -860,7 +879,8 @@ p {
             font-size: 9px;
             margin-left: 17px;
             margin-top: 2px;
-            margin-bottom: 2px;
+            margin-bottom: 10px;
+            line-height: 17px;
         }     
     }
 
