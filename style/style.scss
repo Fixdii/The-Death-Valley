@@ -41,6 +41,7 @@ p {
         line-height: 28px;
         letter-spacing: 1.8px;
         text-transform: uppercase;
+        text-shadow: #33333336 2px 5px;
         color: #505050;
     }
 
@@ -580,14 +581,6 @@ p {
 }
 
 @media screen and (max-width: 1301px) {
-    .first-man {
-        display: none;
-    }
-
-    .first-work {
-        display: none;
-    }
-
     .contact{
         &__left {
             width: 414px;
@@ -605,10 +598,6 @@ p {
 
     .y-map {
         width: 255px;
-    }
-
-    .about-us__content {
-        gap: 0px;
     }
 
 }
@@ -638,13 +627,17 @@ p {
             width: 384px;
         }
 
+        &__image{
+            margin-left: 0;
+        }
+
         &__content {
-            gap: 0px;
+            gap: 40px;
         }
     }
 
     .header__title {
-        font-size: 38px;
+        font-size: 38px;        
     }    
 }
 
@@ -677,9 +670,7 @@ p {
         }
     }   
 
-    .card-info{
-        display: none;
-    }
+   
 
     .header__img {
         left: 375px;
@@ -692,13 +683,12 @@ p {
         width: 250px;
     }
 
-    .team-part__title {
-        margin-top: 80px;
-        font-size: 30px;
-    }
-
     .works {
         height: 100%;
+
+        &__titles{
+            margin-top: 120px;
+        }
     }
 
     .work-img {
@@ -730,6 +720,37 @@ p {
         width: 100%;
     }
 
+    .card-info{
+        top: 124px;
+        width: 218px;
+        height: 163px;
+
+        &__social{
+            margin-left: 27px;
+        }
+    }
+
+    .rectangle{
+        &__title{
+            font-size: 10px;
+            margin-top: 15px;
+            margin-left: 27px;
+        }
+
+        &__text{
+            font-size: 10px;
+            margin-left: 27px;
+            margin-top: 2px;
+            margin-bottom: 15px;
+        }     
+    }
+
+    .team-part{
+        &__span{
+            font-size: 8px;
+        }
+    }  
+
     .y-map {
         width: 90%;
     }
@@ -754,22 +775,39 @@ p {
     .works {
         &__subtitle {
             margin-bottom: 50px;
+            font-size: 15px;
         }
 
         &__title {
             font-size: 30px;
         }
+
+        &__card{
+            margin-bottom: 100px;
+        }
     }
+
+    .team-part{
+        &__title {
+            margin-top: 80px;
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 15px;
+        }
+    }
+    
 
     .form__button {
         width: 100%;
     }
 
     .about-us {
-        height: 1100px;
+        height: 1180px;
 
         &__subtitle {
-            font-size: 16px;
+            font-size: 15px;
         }
 
         &__card {
@@ -779,6 +817,7 @@ p {
         &__text {
             padding-left: 0px;
             height: 290px;
+            font-size: 12px;
         }
 
         &__title {
@@ -787,10 +826,12 @@ p {
 
         &__cardTitle {
             padding-left: 0;
+            font-size: 15px;
         }
     
         &__cardSubtitle {
             padding-left: 0;
+            font-size: 15px;
         }
 
         &__image {
@@ -798,6 +839,37 @@ p {
         }    
     }   
 
+    .card-info{
+        top: 90px;
+        width: 171px;
+        height: 139px;
+
+        &__social{
+            margin-left: 17px;
+        }
+    }
+
+    .rectangle{
+        &__title{
+            font-size: 10px;
+            margin-top: 15px;
+            margin-left: 17px;
+        }
+
+        &__text{
+            font-size: 9px;
+            margin-left: 17px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }     
+    }
+
+    .team-part{
+        &__span{
+            font-size: 8px;
+        }
+    }
+   
     .y-map {
         width: 85%;
     }   
